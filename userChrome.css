@@ -1,0 +1,115 @@
+/* Remove left space of toolbar  */
+.titlebar-spacer[type="pre-tabs"] {
+    display: none !important;
+}
+
+
+/* Customize window action buttons ( Close, Min, Max ) */
+.titlebar-button {
+    margin: 7px !important;
+    margin-left: 0 !important;
+    margin-right: 5px !important;
+    border-radius: 4px !important;
+}
+
+.tab-background {
+  margin-block: 0px !important;
+  border-top-left-radius: 12px !important;
+  border-top-right-radius: 12px !important;
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+.tab-content {
+  padding-left: 11px !important;
+}
+
+/* Apply dimmed background for inactive tabs */
+.tabbrowser-tab:hover>.tab-stack>.tab-background:not([selected], [multiselected]) {
+    background-color: color-mix(in srgb, currentColor 12%, transparent);
+}
+.tabbrowser-tab>.tab-stack>.tab-background:not([selected], [multiselected]) {
+    background-color: color-mix(in srgb, currentColor 6%, transparent);
+}
+
+/* Make all tabs small except selected one */
+.tabbrowser-tab[fadein]:not([selected]):not([pinned]) {  
+    max-width: 145px !important;
+    min-width: 115px !important;
+}
+
+/* Selected tabs width */
+.tabbrowser-tab[selected][fadein]:not([pinned]) {  
+    max-width: 145px !important;
+    min-width: 115px !important;
+}
+
+
+/* Hide tab close button */
+#TabsToolbar .close-icon {
+    display: -moz-box !important;
+}
+
+
+/* Unhide close button when it is selected tab and not pinned */
+#TabsToolbar .tabbrowser-tab[selected=true]:not([pinned]) .close-icon {
+    display: -moz-box !important;
+}
+
+
+/* Show close button even when mouse hover on inactive tabs */
+#TabsToolbar .tabbrowser-tab:not([selected="true"]):not([pinned]):hover .close-icon{
+    display: -moz-box !important;
+}
+
+
+/* Reduce spacing between pinned and regular tabs */
+#tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab[first-visible-unpinned-tab] { 
+    margin-inline-start: initial !important; 
+}
+
+
+/* Menu items border and padding */
+menupopup > menuitem,
+menupopup > menu {
+    border-radius: 4px !important;
+    margin-left: 4px !important;
+    margin-right: 4px !important;
+}
+
+
+/* context menu top left button padding */
+menugroup > menuitem:first-child {  
+    padding-left: 4px !important;
+}
+
+
+/* context menu top right button padding */
+menugroup > menuitem:last-child {  
+    padding-right: 4px !important;
+}
+
+
+/* context menu top buttons radius */
+menugroup > menuitem {
+    border-radius: 4px !important;
+}
+menugroup > menuitem > hbox > image {  
+    border-radius: 4px !important;
+}
+
+
+/* Popup Menu background color */
+menupopup{
+    --panel-color: #c8c8c8 !important;
+    --panel-border-color: rgb(41,42,45) !important;
+    --menu-background-color: rgb(255,255,255) !important;
+}
+
+menuseparator{
+  border-color:  rgb(52,52,52) !important;
+}
+
+#urlbar-background {
+   outline: none !important;
+}
