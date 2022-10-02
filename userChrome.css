@@ -35,13 +35,13 @@
 /* Make all tabs small except selected one */
 .tabbrowser-tab[fadein]:not([selected]):not([pinned]) {  
     max-width: 145px !important;
-    min-width: 115px !important;
+    min-width: 60px !important;
 }
 
 /* Selected tabs width */
 .tabbrowser-tab[selected][fadein]:not([pinned]) {  
     max-width: 145px !important;
-    min-width: 115px !important;
+    min-width: 60px !important;
 }
 
 
